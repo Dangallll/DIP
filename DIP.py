@@ -2,7 +2,6 @@ import tifffile as tiff
 import numpy as np
 import matplotlib.pyplot as plt
 from itertools import permutations
-from numba import jit, cuda
 
 
 class Image40:
