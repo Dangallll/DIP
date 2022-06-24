@@ -1,5 +1,5 @@
 # DIP
-## DEMOSAIC image processing module
+## DEMOSAIC Image Processing module
 
 split channel and demix  
 from DIP import Image40  
