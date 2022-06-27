@@ -123,6 +123,7 @@ class Image40:
         comb = list(permutations(range(0,8), 8))
         L = len(comb)
         minloss = self.loss()
+        ori_P = self.P
         opt_par = self.P
         
         
@@ -139,7 +140,9 @@ class Image40:
                         self.seedmat(par)[(comb[k][7]),:]
             ])
 
-            newP = np.multiply(self.P, coeffmat)
+            newP = np.multiply(ori_P, coeffmat)
+            
+            self.P = newP
 
             sl = self.loss()
             
