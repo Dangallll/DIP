@@ -154,3 +154,8 @@ class Image40:
           
             
         return minloss, opt_par
+    
+    def Sfinetune(self):
+        for par in list([0.5,0.4,0.3,0.2,0.1]):
+            print("fine tuning with par : ", par) 
+            self.finetune(par)
