@@ -17,3 +17,5 @@ split channel and demix
   ```
   from utils.DIP import Image40
   ```
+## 07.06
+  updated STA analysis tool(jupyter notebook pipleine)
